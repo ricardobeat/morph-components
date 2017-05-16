@@ -1,6 +1,7 @@
 
-var Components = require('./components')
-    .register('searchbox', require('./components/searchbox'))
-    .register('input', require('./components/input'))
+const components = require('./lib/components.js')
 
-Components.mount('#app')
+require('./component/searchbox')
+require('./component/input')
+
+components.mount('#app')
